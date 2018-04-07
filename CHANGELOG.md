@@ -1,10 +1,6 @@
-<a name="1.0"></a>
-# 1.0 (2017-08-23)
+<a name="0.0.0"></a>
+# 0.0.0 (2018-04-07)
 
 ### Features
 
-* Moved off of the original Hard Candy Shell Twig/Require/Sass boilerplate
-* Removed Require
-* Removed Compass
-* Added Gulp
-* Revised initial template views and scss
+* Initialization
