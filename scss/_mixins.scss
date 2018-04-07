@@ -1,43 +1,29 @@
-@import "compass/css3/animation";
-
-// rem fallback - credits: http://zerosixthree.se/
-@function calculateRem($size) {
-  $remSize: $size / 10px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
+// Mixins
 
 // antialiasing mode font rendering
-
 @mixin font-smoothing {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-@mixin transform($val) {
-  -webkit-transform: $val;
-  -moz-transform: $val;
-  -ms-transform: $val;
-  -o-transform: $val;
-  transform: $val;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin transition($args...) {
-  -webkit-transition: $args;
-  -moz-transition: $args;
-  -ms-transition: $args;
-  -o-transition: $args;
-  transition: $args;
+// Absolute centering
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  
 }
 
-@mixin rotate( $val: -2deg ) {
-  -webkit-transform: rotate($val);
-  -moz-transform: rotate($val);
-  -ms-transform: rotate($val);
-  transform: rotate($val);
+// Absolute centering vertically
+@mixin absolute-vertical {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  
 }
 
-
+// Absolute centering horizontally
+@mixin absolute-horizontal {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);  
+}

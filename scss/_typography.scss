@@ -1,0 +1,54 @@
+// Typography
+
+h1, h2, h3, h4, h5, h6, p, strong, em, small {
+    font-weight: initial;
+}
+
+h1 {
+}
+
+h2 {
+}
+
+h3 {    
+}
+
+h4 {    
+}
+
+h5 {
+}
+
+h6 {
+}
+
+p {
+}
+
+strong {
+}
+
+em {
+}
+
+small {
+}
+
+a, a:hover, a:active, a:visited, a:link {
+    text-decoration: none;
+
+    &:hover {
+
+    }
+}
+
+.button {
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+button {
+    @extend .button;
+}

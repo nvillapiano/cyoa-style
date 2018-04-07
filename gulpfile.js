@@ -4,7 +4,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 
 var input = './scss/**/*.scss';
-var output = './wordpress/css';
+var output = './css';
 var sassOptions = {
   errLogToConsole: true,
   outputStyle: 'expanded'
