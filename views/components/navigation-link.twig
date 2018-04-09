@@ -1,0 +1,28 @@
+<!-- Navigation Link -->
+
+{# {% include 'components/navigation-link.twig' with 
+    {
+        right: true,
+        left: true,
+        pageNumber: '',
+        navigationLinkCopy: ''
+    }
+%} #}
+
+<a href="page-{{pageNumber}}" class="navigation-link {{ right ? 'right' }}{{ left ? 'left' }}">
+    {% if navigationLinkCopy %}
+        <span class="navigation-link-copy">
+            {{navigationLinkCopy}}
+        </span>
+        <span class="navigation-symbol page-number">
+            {{pageNumber}}
+        </span>
+    {% else %}          
+        <span class="{{navigationLinkCopy}}">
+            Go on to the next page
+        </span>
+        <span class="navigation-symbol">
+            ➡
+        </span>
+    {% endif %}
+</a>

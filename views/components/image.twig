@@ -1,0 +1,22 @@
+<!-- Image -->
+
+{# 
+    {% include 'components/image.twig' with 
+        {
+            imgSrc: '',
+            imgAlt: '',
+            caption: ""
+        }
+    %}
+#}
+
+{% set imgPath = './images/' %}
+
+<figure class="image">
+    <img src="{{imgPath}}{{imgSrc}}" alt="{{imgAlt}}">
+    {% if caption %}
+        <figcaption>
+            {{caption}}
+        </figcaption>      
+    {% endif %}
+</figure>

@@ -1,0 +1,8 @@
+// _image.scss
+
+.image {
+	margin: 0;
+	margin-top: calc( (2rem + 2vw) * -1 );
+	margin-bottom: calc( ( (2rem + 2vw) * -1 ) + 1rem );
+	padding: calc(2rem + 2vw);
+}

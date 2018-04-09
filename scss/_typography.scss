@@ -1,10 +1,16 @@
 // Typography
 
+body {
+	font-size: 2.4rem;
+}
+
 h1, h2, h3, h4, h5, h6, p, strong, em, small {
     font-weight: initial;
 }
 
 h1 {
+	@include playfair-black();
+	font-size: 6.4rem;
 }
 
 h2 {
@@ -22,7 +28,9 @@ h5 {
 h6 {
 }
 
-p {
+p {	
+	width: 100%;
+	line-height: 1.5;
 }
 
 strong {
@@ -31,14 +39,43 @@ strong {
 em {
 }
 
+blockquote {
+	@include khand-bold();
+	font-size: 3.2rem;
+	margin: 3rem 0 4rem;
+	padding: calc(2rem + 2vw);	
+	line-height: 1.25;
+	border: 0.1rem solid $black;
+	background: $white;
+	position: relative;	
+
+	&:after {
+		content: '';
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		width: 100%;
+		height: 100%;
+		background: rgba($black, 0.25);
+		z-index: -1;
+	}
+
+}
+
+figcaption {
+	font-size: 1.6rem;
+	@include cardo-regular-italic();
+	padding: 1rem 2rem 0;
+}
+
 small {
 }
 
 a, a:hover, a:active, a:visited, a:link {
     text-decoration: none;
+    color: $black;
 
     &:hover {
-
     }
 }
 

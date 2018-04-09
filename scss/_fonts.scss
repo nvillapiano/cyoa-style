@@ -4,3 +4,55 @@
 //   font-style: normal;
 //   font-weight: 400;
 // }
+
+// Cardo regular
+@mixin cardo-regular {
+  font-family: 'Cardo', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+// Cardo regular italic
+@mixin cardo-regular-italic {
+  font-family: 'Cardo', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+// Cardo bold
+@mixin cardo-bold {
+  font-family: 'Cardo', serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+// Playfair regular
+@mixin playfair-regular {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+// Playfair black
+@mixin playfair-black {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 900;
+}
+
+// Khand semi-bold
+@mixin khand-semi-bold {
+  font-family: 'Khand', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+// Khand bold
+@mixin khand-bold {
+  font-family: 'Khand', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+}
+
+
+

@@ -2,6 +2,7 @@ html, body {
     @include font-smoothing;
     font-size: 62.5%; // 1rem = 10px
     transition: opacity 0.3s;
+    @include cardo-regular();
 }
 
 *, *:before, *:after {
@@ -20,4 +21,11 @@ img, svg {
     &.in {
         opacity: 1;
     }
+}
+
+.container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 4rem auto;
+    padding: 0 2rem;
 }
